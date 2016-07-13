@@ -2,7 +2,26 @@
 // created: 2016-07-09, Lutz Prechelt
 // -----------------------------------------------------
 
-@web-font-path2: "https://fonts.googleapis.com/css?family=Roboto+Slab:700";
+//----- patching bootstrap or flatly:
+
+@web-font-path2: "https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic)";
 
 .web-font(@web-font-path2);
 
+.navbar-brand {
+  float: left;
+  padding: 0.8ex;
+  height: auto;
+  width: 10ex;
+}
+
+//----- adding RQC-only styles:
+
+.rqcheaderanchor {
+  font-size: 71%;
+  text-color: @gray
+}
+
+.readablewidth {
+  max-width: 80ex;  // font-dependent, ca. max. 80 characters
+}
